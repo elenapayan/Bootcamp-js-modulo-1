@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,23 @@
     <title>Laboratorio módulo 1</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
+    <div class="container">
+        <div class="img">
+            <img src="" id="avatar" alt="Avatar" class="avatar">
+        </div>
+        <div class="data">
+            <label for="name"><b>Name</b></label>
+            <input type="text" id="name" name="name" />
+            <label for="lastName"><b>Last name</b></label>
+            <input type="text" id="lastName" name="lastName" />
+        </div>
+    </div>
+    <div id="actions">
+        <button type="button" onclick="console.log(document.getElementById('lastName').value)">Update</button>
+    </div>
     <script type="text/javascript" src="./js/main.js"></script>
 </body>
+
 </html>
